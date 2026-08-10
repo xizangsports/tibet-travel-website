@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>西藏体育旅行社 | 西藏旅投集团</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:19px}
+@media(max-width:768px){html{font-size:16px}}
+:root{--g:#c9a84c;--gl:#e8cd7a;--ink:#04060c;--ink2:#090c18;--card:#0e1222;--card2:#13182e;--t:#e8e4dc;--t2:#8e8a9a;--t3:#5a5668;--b:rgba(201,168,76,.12);--b2:rgba(201,168,76,.06);--sans:'Inter','SF Pro Display','PingFang SC','Microsoft YaHei',sans-serif}
+body{font-family:var(--sans);background:var(--ink);color:var(--t);-webkit-font-smoothing:antialiased;overflow-x:hidden;font-weight:350;line-height:1.6}
+a{color:var(--g);text-decoration:none;transition:.3s}a:hover{color:var(--gl)}
+::selection{background:var(--g);color:var(--ink)}
+.c{max-width:1260px;margin:0 auto;padding:0 28px}
+.label{font-size:.72rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--g);font-weight:500;margin-bottom:10px;display:block}
+.h-xl{font-size:3.8rem;font-weight:280;color:#fff;line-height:1.05;letter-spacing:-1.5px}
+.h2{font-size:2.4rem;font-weight:300;color:#fff;letter-spacing:-.8px;line-height:1.2;margin-bottom:12px}
+.p-lg{font-size:.95rem;color:var(--t2);font-weight:350;line-height:1.7}
+.gold{color:var(--g)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:8px;font-size:.82rem;font-weight:450;cursor:pointer;transition:.4s;border:none;font-family:var(--sans)}
+.btn-p{background:var(--g);color:var(--ink)}.btn-p:hover{background:var(--gl);transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,168,76,.2)}
+.btn-o{background:transparent;border:1px solid var(--b);color:var(--t)}.btn-o:hover{background:var(--b2);border-color:var(--g);color:var(--g)}
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(4,6,12,.92);backdrop-filter:blur(28px);border-bottom:1px solid rgba(255,255,255,.03)}
+.nb{display:flex;justify-content:space-between;align-items:center;height:62px}
+.lg{display:flex;align-items:center;gap:10px;cursor:pointer}
+.lg-i{width:30px;height:30px;border:1.5px solid var(--g);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.9rem;color:var(--g);transition:.3s}
+.lg:hover .lg-i{background:var(--g);color:var(--ink)}
+.lg-t{line-height:1.15}
+.lg-t h1{font-size:.82rem;color:#fff;font-weight:500}
+.lg-t p{font-size:.52rem;color:var(--t3);letter-spacing:2px;text-transform:uppercase}
+.nav-links{display:flex;gap:1px;align-items:center}
+.nav-links a{padding:5px 10px;border-radius:6px;color:var(--t2);font-size:.78rem;transition:.3s}
+.nav-links a:hover{color:var(--g);background:var(--b2)}
+.nav-links .cta{padding:5px 14px;background:var(--g);color:var(--ink);border-radius:6px;font-weight:500}
+.nav-links .cta:hover{background:var(--gl);color:var(--ink)}
+section{padding:80px 0}section:nth-child(even){background:var(--ink2)}
+.sh{text-align:center;max-width:620px;margin:0 auto 40px}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse 60% 55% at 25% 40%,rgba(201,168,76,.05),transparent 60%),radial-gradient(ellipse 40% 50% at 75% 45%,rgba(201,168,76,.03),transparent 60%),#04060c}
+.hero-g{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;position:relative;z-index:1;padding:80px 0;min-height:100vh}
+.hero-l .h-xl{margin-bottom:14px}.hero-l .p-lg{margin-bottom:24px}
+.h-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 14px;border:1px solid var(--b);border-radius:20px;font-size:.65rem;color:var(--g);letter-spacing:1.5px;margin-bottom:20px}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--b);border-radius:10px;overflow:hidden;max-width:900px;margin:-30px auto 0;position:relative;z-index:2}
+.stat{background:var(--card);padding:20px;text-align:center}
+.stat .n{font-size:1.6rem;font-weight:250;color:var(--g);letter-spacing:-1px}
+.stat .l{font-size:.75rem;color:var(--t3);margin-top:2px}
+.hiw{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.hiw-card{text-align:center;padding:28px 18px;background:var(--card);border:1px solid var(--b);border-radius:12px;transition:.4s}
+.hiw-card:hover{border-color:rgba(201,168,76,.2);transform:translateY(-4px)}
+.hiw-card .ic{font-size:1.8rem;margin-bottom:12px}
+.hiw-card h4{font-size:.9rem;color:#fff;font-weight:400;margin-bottom:5px}
+.hiw-card p{font-size:.75rem;color:var(--t2);line-height:1.6}
+.bh{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--b)}
+.bh h3{font-size:1rem;color:#fff;font-weight:400}
+.tc{background:var(--card);border:1px solid var(--b);border-radius:10px;padding:18px;cursor:pointer;transition:.4s;position:relative;overflow:hidden}
+.tc:hover{transform:translateY(-3px);border-color:rgba(201,168,76,.18);background:var(--card2)}
+.tc .tw{display:flex;gap:12px}
+.tc .il{font-size:1.6rem;min-width:40px;text-align:center}
+.tc .tb{flex:1}
+.tc .tt{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:3px}
+.tc .tt h4{font-size:.9rem;color:#fff;font-weight:400;line-height:1.3}
+.tc .rt{font-size:.75rem;color:var(--t2);margin-bottom:6px;line-height:1.5}
+.tc .hl{display:flex;flex-wrap:wrap;gap:3px}
+.tc .hl span{padding:2px 6px;background:var(--b2);border-radius:4px;font-size:.65rem;color:var(--gl)}
+.tc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.pc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.pc{background:var(--card);border:1px solid var(--b);border-radius:10px;padding:16px;cursor:pointer;transition:.4s}
+.pc:hover{transform:translateY(-3px);border-color:rgba(201,168,76,.2)}
+.pc .ic{font-size:1.3rem;margin-bottom:5px}.pc h5{font-size:.78rem;color:#fff;font-weight:400;margin-bottom:2px}
+.pc .d{font-size:.65rem;color:var(--t3);line-height:1.4;margin-bottom:4px}
+.pc .pt{font-size:.74rem;color:var(--gl);font-weight:400}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:130px;gap:6px}
+.gi{position:relative;border-radius:6px;overflow:hidden;cursor:pointer;border:1px solid var(--b);transition:.4s}
+.gi:hover{transform:scale(1.02);border-color:var(--g);z-index:3;box-shadow:0 12px 40px rgba(0,0,0,.5)}
+.gi .gc{position:absolute;bottom:0;left:0;right:0;padding:6px 10px;background:linear-gradient(transparent,rgba(4,6,12,.92));font-size:.7rem;color:var(--gl)}
+.gal-filters{display:flex;justify-content:center;flex-wrap:wrap;gap:5px;margin-bottom:18px}
+.gal-filters button{padding:4px 14px;background:transparent;border:1px solid var(--b);border-radius:20px;color:var(--t3);font-size:.68rem;cursor:pointer;font-family:var(--sans)}
+.gal-filters button:hover,.gal-filters button.act{background:var(--b2);border-color:var(--g);color:var(--g)}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.cf{background:var(--card);border:1px solid var(--b);border-radius:10px;padding:24px}
+.cf input,.cf select,.cf textarea{width:100%;padding:8px 12px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.04);border-radius:6px;color:var(--t);font-family:var(--sans);font-size:.78rem;outline:none}
+.cf input:focus,.cf select:focus,.cf textarea:focus{border-color:var(--g);background:rgba(201,168,76,.03)}
+.cf textarea{height:70px;resize:vertical}
+footer{background:#03050a;border-top:1px solid rgba(255,255,255,.02);padding:40px 0 16px}
+.fbot{border-top:1px solid rgba(255,255,255,.02);padding-top:10px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;font-size:.58rem;color:var(--t4)}
+.lightbox{display:none;position:fixed;z-index:2000;inset:0;background:#000;align-items:center;justify-content:center}
+.lightbox.a{display:flex}
+.lb-close{position:absolute;top:20px;right:24px;font-size:1.6rem;color:rgba(255,255,255,.6);cursor:pointer;background:rgba(0,0,0,.4);border:none;z-index:3;width:40px;height:40px;border-radius:50%}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:100%;left:0;display:flex;justify-content:space-between;padding:0 8px;pointer-events:none;z-index:2}
+.lb-nav button{pointer-events:auto;width:48px;height:48px;border-radius:50%;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.7);font-size:1.2rem;cursor:pointer}
+.lb-title-overlay{position:absolute;bottom:0;left:0;right:0;padding:60px 24px 30px;background:linear-gradient(transparent,rgba(0,0,0,.7));z-index:2;text-align:center}
+.lb-title-overlay .t{font-size:1.1rem;color:#fff;font-weight:400}
+.lb-title-overlay .s{font-size:.75rem;color:rgba(255,255,255,.5)}
+.lb-title-overlay .c{font-size:.6rem;color:rgba(255,255,255,.3);margin-top:6px}
+@media(max-width:1024px){.hero-g{grid-template-columns:1fr}.pc-grid{grid-template-columns:repeat(2,1fr)}.tc-grid{grid-template-columns:repeat(2,1fr)}.gal{grid-template-columns:repeat(3,1fr)}.hiw{grid-template-columns:1fr}}
+@media(max-width:768px){.h-xl{font-size:2rem}.h2{font-size:1.5rem}.tc-grid,.cg,.pc-grid{grid-template-columns:1fr}.gal{grid-template-columns:repeat(2,1fr)}.stats-row{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<header><div class="c nb">
+<div class="lg" onclick="location.href='#home'">
+<div class="lg-i">⛰</div>
+<div class="lg-t"><h1>西藏体育旅行社</h1><p>西藏旅投集团 · 36年深耕</p></div></div>
+<nav class="nav-links">
+<a href="#home">首页</a><a href="#tours">线路</a><a href="#gallery">画廊</a><a href="#contact" class="cta">咨询 →</a>
+</nav></div></header>
+
+<section class="hero" id="home">
+<div class="c hero-g">
+<div class="hero-l">
+<div class="h-badge">✦ 西藏旅投集团 · 36年深耕</div>
+<h1 class="h-xl">探索 <span class="gold">世界第三极</span></h1>
+<p class="p-lg">从冈仁波齐的转山之路到珠峰脚下的冰川徒步—专注更高、更远、更独特的雪域体验</p>
+<div class="hero-cta">
+<a href="#tours" class="btn btn-p">浏览精选行程 →</a>
+<a href="#contact" class="btn btn-o">定制旅程</a>
+</div>
+</div>
+<div class="hero-r"></div>
+</div></section>
+
+<section style="padding:24px 0;background:transparent">
+<div class="c"><div class="stats-row">
+<div class="stat"><div class="n">36</div><div class="l">年行业深耕</div></div>
+<div class="stat"><div class="n">100+</div><div class="l">精品线路</div></div>
+<div class="stat"><div class="n">3,000+</div><div class="l">服务旅客</div></div>
+<div class="stat"><div class="n">7</div><div class="l">覆盖地市</div></div>
+</div></div></section>
+
+<section><div class="c">
+<div class="sh"><span class="label">How It Works</span><h2 class="h2">三步开启西藏之旅</h2><p class="p-lg">从咨询到出发，每一步都简单安心</p></div>
+<div class="hiw">
+<div class="hiw-card"><div class="ic">💬</div><h4>告诉我们您的想法</h4><p>出行时间、人数、偏好、预算，旅行顾问为您初步规划</p></div>
+<div class="hiw-card"><div class="ic">🎨</div><h4>定制专属方案</h4><p>量身定制行程，住宿·车辆·导游·门票一站式服务</p></div>
+<div class="hiw-card"><div class="ic">🏔</div><h4>出发·探索西藏</h4><p>全程24h支持，让您无忧畅游世界第三极</p></div>
+</div></div></section>
+
+<section id="tours" style="background:var(--ink2)"><div class="c">
+<div class="sh"><span class="label">Tours</span><h2 class="h2">精选线路</h2><p class="p-lg">点击卡片查看详细行程安排</p></div>
+<div class="tc-grid" id="tourList"></div>
+</div></section>
+
+<section><div class="c">
+<div class="bh"><h3>🏔 高原徒步 · 🚙 秘境自驾 · ⛰ 极地探险</h3></div>
+<div class="pc-grid">
+<div class="pc" onclick="sd('珠峰徒步')"><div class="ic">🗻</div><h5>珠峰东坡徒步 10天</h5><div class="d">近距离观赏4座8000m+雪山</div></div>
+<div class="pc" onclick="sd('库拉岗日')"><div class="ic">🏔</div><h5>库拉岗日徒步 5天</h5><div class="d">四大神山·白马林错湖畔</div></div>
+<div class="pc" onclick="sd('冈仁波齐')"><div class="ic">☸</div><h5>冈仁波齐转山 2天</h5><div class="d">世界中心·最高5650m</div></div>
+<div class="pc" onclick="sd('川藏318')"><div class="ic">🛣</div><h5>川藏南线318 11天</h5><div class="d">中国最美景观大道</div></div>
+<div class="pc" onclick="sd('G219')"><div class="ic">🗺</div><h5>G219藏南秘境 9天</h5><div class="d">墨脱→玉麦→卡久寺</div></div>
+<div class="pc" onclick="sd('萨普')"><div class="ic">🔦</div><h5>萨普神山探秘 4天</h5><div class="d">藏北冰川秘境</div></div>
+<div class="pc" onclick="sd('珠峰4日')"><div class="ic">🗻</div><h5>珠峰大本营 4天</h5><div class="d">绒布寺·日出金山</div></div>
+<div class="pc" onclick="inq()"><div class="ic">🎨</div><h5>定制专属旅程</h5><div class="d">天数×地区自由组合</div></div>
+</div>
+</div></section>
+
+<section id="gallery" style="background:var(--ink2)"><div class="c">
+<div class="sh"><span class="label">Gallery</span><h2 class="h2">西藏风光 · 点击看大图</h2><p class="p-lg">点击任意图片全屏查看</p></div>
+<div class="gal-filters"><button class="act" data-gal="all">全部</button><button data-gal="potala">🏛 布达拉宫</button><button data-gal="lake">💎 神山圣湖</button><button data-gal="trek">🥾 徒步秘境</button></div>
+<div class="gal" id="galleryGrid"></div>
+</div></section>
+
+<div class="lightbox" id="lightbox">
+<button class="lb-close" onclick="cL()">✕</button>
+<div class="lb-nav"><button onclick="nL(-1)">←</button><button onclick="nL(1)">→</button></div>
+<div class="lb-content" id="lbContent"></div>
+</div>
+
+<section><div class="c">
+<div class="sh"><span class="label">Testimonials</span><h2 class="h2">旅行者的声音</h2></div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+<div style="background:var(--card);border:1px solid var(--b);border-radius:8px;padding:20px"><p style="font-size:.78rem;color:var(--t2);font-style:italic;line-height:1.7">"穿越喜马拉雅是我一生最难忘的经历，导游专业讲解让这次旅行远超预期。"</p><p style="margin-top:10px;font-size:.68rem;color:var(--g)">— James · 英国</p></div>
+<div style="background:var(--card);border:1px solid var(--b);border-radius:8px;padding:20px"><p style="font-size:.78rem;color:var(--t2);font-style:italic;line-height:1.7">"冈仁波齐转山不仅是一次身体挑战，更是一次心灵洗礼。感谢全程保障。"</p><p style="margin-top:10px;font-size:.68rem;color:var(--g)">— 陈女士 · 上海</p></div>
+<div style="background:var(--card);border:1px solid var(--b);border-radius:8px;padding:20px"><p style="font-size:.78rem;color:var(--t2);font-style:italic;line-height:1.7">"G219藏南环线太震撼了！从墨脱热带雨林到卡久寺云海，双语导游非常专业。"</p><p style="margin-top:10px;font-size:.68rem;color:var(--g)">— Sarah · 美国</p></div>
+</div></div></section>
+
+<section style="background:var(--ink2)"><div class="c" style="text-align:center;max-width:680px;margin:0 auto">
+<span class="label">About Us</span><h2 class="h2">关于我们</h2>
+<p class="p-lg">西藏旅投集团·国有老牌企业·36年深耕。专注：<span class="gold">高原徒步·秘境自驾·极地探险·定制旅行·赛事运营·研学康养·轻奢户外·政企团建</span>。中英双语导游，外宾入藏资质。</p>
+</div></section>
+
+<section id="contact"><div class="c">
+<div class="sh"><span class="label">Contact</span><h2 class="h2">联系我们</h2><p class="p-lg">24小时内与您联系</p></div>
+<div class="cg">
+<div><h3 style="font-size:1.05rem;color:#fff;font-weight:400;margin-bottom:10px">📞 联系方式</h3>
+<p style="color:var(--t2);font-size:.78rem;margin-bottom:14px">西藏旅投集团旗下 · 国有老牌企业</p>
+<p style="color:var(--t2);font-size:.75rem;margin-bottom:5px">📍 西藏自治区拉萨市</p>
+<p style="color:var(--t2);font-size:.75rem;margin-bottom:5px">📱 +86 139-XXXX-XXXX（微信）</p>
+</div>
+<div class="cf">
+<div class="fg"><label>姓名 *</label><input type="text" id="fn" placeholder="您的姓名"></div>
+<div class="fg"><label>联系方式 *</label><input type="text" id="fc" placeholder="手机/微信/邮箱"></div>
+<div class="fg"><label>感兴趣</label><select id="fp"><option value="">请选择</option><option>🏔 高原徒步</option><option>🚙 秘境自驾</option><option>⛰ 极地探险</option><option>🎨 私人定制</option></select></div>
+<div class="fg"><label>备注</label><textarea id="fm" placeholder="天数·需求"></textarea></div>
+<button class="btn btn-p" style="width:100%;justify-content:center" onclick="si()">提交咨询 →</button>
+</div></div></div></section>
+
+<footer><div class="c"><div class="fbot"><p>© 2026 西藏体育旅行社 · 西藏旅投集团</p></div></div></footer>
+
+<script>
+var tours={
+'G219':{n:'G219藏南秘境环线 9天',h:['🌴 墨脱','🏯 卡久寺','💎 白马林错'],i:['D1: 林芝接机→波密（约300km，6h）','D2: 波密→嘎隆拉隧道→墨脱（约150km，4h）','D3: 墨脱→波密→林芝（约400km，9h）','D4: 林芝→金东乡→扎日乡（约280km，7h）','D5: 扎日乡→机甲寺→玉麦乡→隆子（约280km，8h）','D6: 隆子→措美→拉康镇→卡久寺（约500km，9h）','D7: 卡久寺→色乡→白马林错→洛扎（约180km，6h）','D8: 洛扎→普莫雍错→羊湖→拉萨（约300km，7h）']},
+'阿里':{n:'珠峰+阿里大环线 13天',h:['🗻 珠峰','☸ 冈仁波齐','🏰 古格王朝'],i:['D1: 拉萨→羊湖→日喀则','D2: 日喀则→协格尔','D3: 协格尔→珠峰大本营','D4: 珠峰→萨嘎','D5: 萨嘎→玛旁雍措→塔钦','D6: 冈仁波齐转山','D7: 塔钦→古格王朝','D8: 扎达→狮泉河','D9: 狮泉河→改则','D10: 改则→纳木错','D11: 纳木错→拉萨']},
+'川藏':{n:'川藏南线318·成都→拉萨 11天',h:['🛣 318','🏔 稻城亚丁','🌊 然乌湖'],i:['D0: 成都集合','D1: 成都→泸定→海螺沟','D2: 海螺沟→红石滩→康定→新都桥','D3: 新都桥→雅江→理塘→稻城','D4: 稻城→亚丁景区','D5: 亚丁→理塘→巴塘','D6: 巴塘→芒康→左贡→八宿','D7: 八宿→然乌湖→米堆冰川→波密','D8: 波密→鲁朗→林芝','D9: 林芝→巴松措→拉萨','D10: 拉萨市内·布宫·大昭寺·八廓街','D11: 送机']},
+'珠峰经典':{n:'拉萨+珠峰经典线 7天',h:['🗻 珠峰大本营','💎 羊卓雍措','🙏 扎什伦布寺'],i:['D1: 各地→拉萨','D2: 拉萨市内·布达拉宫·大昭寺','D3: 拉萨→羊湖→卡若拉冰川→日喀则（约370km，9h）','D4: 日喀则→绒布寺→珠峰大本营（约340km，8h）','D5: 珠峰大本营→日喀则（约340km，8h）','D6: 扎什伦布寺→拉萨（约270km，5h）','D7: 送机']},
+'林芝桃花':{n:'林芝桃花之旅 7天',h:['🌸 波密桃花沟','🏔 南迦巴瓦','🌊 巴松措'],i:['D1: 林芝接机→雅鲁藏布大峡谷→索松村','D2: 索松村→色季拉山口→鲁朗','D3: 鲁朗→波密桃花沟→波密','D4: 波密→米堆冰川→然乌湖','D5: 波密→鲁朗→林芝','D6: 林芝→巴松措→拉萨','D7: 送机']},
+'萨普':{n:'萨普神山探秘 6天',h:['❄ 萨普冰川','🏔 色林错','🌿 藏北草原'],i:['D1: 拉萨→那曲→茶曲乡（约566km）','D2: 茶曲乡→达姆寺→比如（约100km）','D3: 比如→萨普神山冰川徒步','D4: 萨普→那曲','D5: 那曲→纳木错','D6: 纳木错→拉萨']},
+'库拉岗日':{n:'库拉岗日雪山徒步 8天',h:['💎 白马林错','🏔 库拉岗日','❄ 40冰川'],i:['D1: 拉萨→羊湖→普莫雍错→洛扎','D2: 洛扎→色乡→白马林错（徒步）','D3: 白马林错→库拉岗日东坡','D4: 库拉岗日冰川徒步','D5: 库拉岗日→三神湖','D6: 三神湖→洛扎','D7: 洛扎→普莫雍错→浪卡子','D8: 浪卡子→羊湖→拉萨']},
+'藏南环线':{n:'藏南秘境环线 5天',h:['🏯 卡定沟','🔮 拉姆拉错','🏛 扎什伦布寺'],i:['D1: 拉萨→卡定沟→林芝八一镇','D2: 八一镇→苯日神山→雅鲁藏布大峡谷→朗县','D3: 朗县→拉姆拉错→加查→达谷峡谷→泽当','D4: 泽当→羊湖→日喀则→扎什伦布寺','D5: 日喀则→卡若拉冰川→羊卓雍措→拉萨']}
+};
+
+var tl=document.getElementById('tourList');
+['G219','阿里','川藏','珠峰经典','林芝桃花','萨普','库拉岗日','藏南环线'].forEach(function(k){
+var t=tours[k];if(!t)return;
+var d=document.createElement('div');d.className='tc';
+var tw=document.createElement('div');tw.className='tw';
+var il=document.createElement('div');il.className='il';il.textContent=t.h[0][0];
+var tb=document.createElement('div');tb.className='tb';
+var tt=document.createElement('div');tt.className='tt';
+var h4=document.createElement('h4');h4.textContent=t.n;tt.appendChild(h4);
+var rt=document.createElement('div');rt.className='rt';rt.textContent=t.h.join(' · ');
+var hl=document.createElement('div');hl.className='hl';
+for(var j=0;j<t.h.length;j++){var s=document.createElement('span');s.textContent=t.h[j];hl.appendChild(s)}
+var ch=document.createElement('div');ch.style.cssText='font-size:.6rem;color:var(--t4);margin-top:6px';ch.textContent='点击查看每日行程 →';
+tb.appendChild(tt);tb.appendChild(rt);tb.appendChild(hl);tb.appendChild(ch);
+tw.appendChild(il);tw.appendChild(tb);d.appendChild(tw);
+d.onclick=function(kk){return function(){sd(kk)}}(k);
+tl.appendChild(d);});
+
+var gi=[
+{t:'布达拉宫',s:'世界文化遗产·3700m',ps:['🏛']},{t:'大昭寺',s:'藏传佛教中心·1300年',ps:['🙏']},{t:'八廓街',s:'千年转经道',ps:['🏘']},
+{t:'羊卓雍措',s:'三大圣湖',ps:['💎']},{t:'纳木错',s:'天湖·4718m',ps:['🌊']},{t:'冈仁波齐',s:'世界中心·6656m',ps:['🏔']},
+{t:'玛旁雍措',s:'圣湖之母',ps:['💧']},{t:'珠穆朗玛峰',s:'世界之巅·8848m',ps:['🗻']},{t:'南迦巴瓦峰',s:'云中天堂·7782m',ps:['🗻']},
+{t:'林芝桃花',s:'3-4月限定',ps:['🌸']},{t:'墨脱',s:'莲花秘境',ps:['🌴']},{t:'古格王朝',s:'千年之谜',ps:['🏰']},
+{t:'扎达土林',s:'百万年',ps:['🏜']},{t:'卡久寺',s:'云中仙境',ps:['🏯']},{t:'藏北草原',s:'那曲',ps:['🌿']},
+{t:'扎什伦布寺',s:'后藏中心',ps:['🏛']},{t:'然乌湖',s:'冰川之泪',ps:['🏞']}];
+var li=0,ls=0;
+var gg=document.getElementById('galleryGrid');
+for(var i=0;i<gi.length;i++){
+var item=gi[i];
+var d=document.createElement('div');d.className='gi';
+var bg=['#1a1a2e','#2a1a1a','#1a2a1a','#1a2a3a','#1a3a4a','#2a1a3a','#1a1a3a','#1a3a1a','#2a3a2a','#1a2a2a','#2a3a1a','#2a1a1a','#2a2a1a','#1a1a3a','#2a3a1a','#1a1a2a','#1a3a3a'];
+d.style.cssText='background:linear-gradient(135deg,'+bg[i%bg.length]+','+bg[(i+1)%bg.length]+');display:flex;align-items:center;justify-content:center;font-size:2rem;color:var(--g);flex-direction:column;gap:4px';
+d.innerHTML='<span>'+item.ps[0]+'</span><span style="font-size:.55rem;color:var(--t4);font-weight:350">'+item.t+'</span>';
+var cap=document.createElement('div');cap.className='gc';cap.innerHTML=item.t+'<br><span style="font-size:.55rem;color:var(--t3)">'+item.s+'</span>';
+d.appendChild(cap);d.dataset.cat='landmark';
+d.onclick=function(ii){return function(){li=ii;openLB(ii,0)}}(i);gg.appendChild(d);}
+
+function openLB(i,s){li=i;ls=s||0;var item=gi[li];var p=item.ps[ls];
+document.getElementById('lbContent').innerHTML='<div style="font-size:5rem;color:rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;flex:1">'+p+'</div><div class="lb-title-overlay"><div class="t">'+item.t+'</div><div class="s">'+item.s+'</div><div class="c">'+(li+1)+'/'+gi.length+'</div></div>';
+document.getElementById('lightbox').classList.add('a');}
+function cL(){document.getElementById('lightbox').classList.remove('a')}
+function nL(d){var item=gi[li];if(item.ps.length>1){ls=(ls+d+item.ps.length)%item.ps.length;openLB(li,ls)}else{li=(li+d+gi.length)%gi.length;openLB(li,0)}}
+
+document.querySelectorAll('.gal-filters button').forEach(function(b){
+b.onclick=function(){document.querySelectorAll('.gal-filters button').forEach(function(x){x.classList.remove('act')});this.classList.add('act');var cat=this.dataset.gal;document.querySelectorAll('#galleryGrid .gi').forEach(function(x){x.style.display=(cat==='all'||x.dataset.cat===cat)?'':'none'})}});
+
+function sd(k){var t=tours[k];if(!t)return;
+var h='<h3 style="color:var(--g);font-size:1rem;font-weight:400;margin-bottom:4px">'+t.n+'</h3><div style="font-size:.7rem;color:var(--t3);margin-bottom:10px">'+t.p+'</div>';
+if(t.h)h+='<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px">'+t.h.map(function(x){return '<span style="padding:2px 8px;background:var(--b2);border-radius:4px;font-size:.65rem;color:var(--gl)">'+x+'</span>'}).join('')+'</div>';
+if(t.i)h+='<div style="font-size:.78rem;color:var(--t2);line-height:1.7">'+t.i.map(function(d){return '<div style="padding:5px 0;border-bottom:1px solid rgba(255,255,255,.03)"><span style="color:var(--g);min-width:28px;display:inline-block">📅</span>'+d+'</div>'}).join('')+'</div>';
+var md=document.createElement('div');md.style.cssText='position:fixed;z-index:2000;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;padding:20px';
+md.innerHTML='<div style="background:var(--card);border:1px solid var(--g);border-radius:14px;max-width:520px;width:100%;padding:32px;position:relative;max-height:90vh;overflow-y:auto"><button onclick="this.parentElement.parentElement.remove()" style="position:absolute;top:12px;right:16px;font-size:1.1rem;color:var(--t3);background:none;border:none;cursor:pointer">✕</button>'+h+'<button class="btn btn-p" style="width:100%;justify-content:center;margin-top:12px" onclick="this.parentElement.parentElement.remove();inq()">立即咨询 →</button></div>';
+document.body.appendChild(md);}
+
+function inq(){document.getElementById('contact').scrollIntoView({behavior:'smooth'});setTimeout(function(){document.getElementById('fn').focus()},500)}
+function si(){var n=document.getElementById('fn').value.trim(),c=document.getElementById('fc').value.trim();if(!n||!c){alert('请填写姓名和联系方式')}else{alert('提交成功！24小时内联系您');document.getElementById('fn').value='';document.getElementById('fc').value='';document.getElementById('fm').value=''}}
+</script>
+</body>
+</html>

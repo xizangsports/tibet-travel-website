@@ -1,0 +1,17 @@
+# 超大原图备份
+images_backup_huge/
+
+# Python related
+__pycache__/
+*.pyc
+.venv/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
